@@ -8,12 +8,12 @@ u_name = "cs5190421"
 
 ####################################################################################################
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome("F:/softwares/chromedriver.exe")
 driver.minimize_window()
 driver.get("https://moodle.iitd.ac.in/login/index.php")
 
-driver.find_element_by_id("details-button").click()
-driver.find_element_by_id("proceed-link").click()
+#driver.find_element_by_id("details-button").click()
+#driver.find_element_by_id("proceed-link").click()
 
 email = driver.find_element_by_id("username")
 passwd = driver.find_element_by_id("password")
